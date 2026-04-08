@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joining Particle Discord...</title>
+    <meta http-equiv="refresh" content="5;url=https://discord.gg/partdma">
+    <style>
+        :root {
+            --primary-pink: #ff7eb9;
+            --secondary-pink: #ff4b91;
+            --dark-bg: #0d0d0d;
+            --glass-bg: rgba(255, 255, 255, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--dark-bg);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        /* Fullscreen Video Background */
+        #video-bg {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;
+            filter: brightness(0.4) blur(4px);
+            object-fit: cover;
+        }
+
+        /* Glassmorphism Card */
+        .container {
+            text-align: center;
+            padding: 3.5rem 2rem;
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-radius: 28px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            box-shadow: 0 10px 40px 0 rgba(255, 126, 185, 0.25);
+            max-width: 420px;
+            width: 90%;
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        /* Pulsing Logo */
+        .logo {
+            width: 130px;
+            height: auto;
+            margin-bottom: 1.5rem;
+            filter: drop-shadow(0 0 15px var(--primary-pink));
+            animation: pulse 2.5s infinite ease-in-out;
+        }
+
+        h1 {
+            font-size: 2rem;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(45deg, #fff, var(--primary-pink));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p {
+            color: rgba(255, 255, 255, 0.75);
+            margin-bottom: 2.5rem;
+            font-size: 0.95rem;
+        }
+
+        /* Button Styling */
+        .btn {
+            display: inline-block;
+            padding: 14px 40px;
+            background: linear-gradient(45deg, var(--primary-pink), var(--secondary-pink));
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 75, 145, 0.4);
+        }
+
+        .btn:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 8px 25px rgba(255, 75, 145, 0.6);
+        }
+
+        /* Progress Bar */
+        .loader {
+            height: 4px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            margin-top: 2.5rem;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .loader-fill {
+            height: 100%;
+            width: 0;
+            background: var(--primary-pink);
+            animation: load 5s linear forwards;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); filter: drop-shadow(0 0 15px var(--primary-pink)); }
+            50% { transform: scale(1.08); filter: drop-shadow(0 0 30px var(--secondary-pink)); }
+        }
+
+        @keyframes load {
+            0% { width: 0%; }
+            100% { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+    <video autoplay muted loop playsinline id="video-bg">
+        <source src="media\pJdDeG5.mp4" type="video/mp4">
+    </video>
+
+    <div class="container">
+        <img src="media\q7AaAih.png" alt="Particle Logo" class="logo">
+        
+        <h1>PARTICLE</h1>
+        <p>Preparing the portal for you...<br>Redirecting in a few seconds.</p>
+
+        <a href="https://discord.gg/partdma" class="btn">Join Discord Now</a>
+
+        <div class="loader">
+            <div class="loader-fill"></div>
+        </div>
+    </div>
+
+    <script>
+        // Fallback JavaScript redirect
+        setTimeout(function() {
+            window.location.href = "https://discord.gg/partdma";
+        }, 5000);
+    </script>
+</body>
+</html>
