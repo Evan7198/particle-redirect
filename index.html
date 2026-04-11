@@ -3,8 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joining Particle Discord...</title>
-    <meta http-equiv="refresh" content="5;url=https://discord.gg/partdma">
+    <title>Particle DMA</title>
+
+    <!-- Open Graph / Discord Embed -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://particledma.top/">
+    <meta property="og:title" content="Particle">
+    <meta property="og:description" content="Join the Particle community on Discord — your portal awaits.">
+    <meta property="og:image" content="https://particledma.top/media/q7AaAih.png">
+    <meta property="og:image:width" content="500">
+    <meta property="og:image:height" content="500">
+
+    <!-- Twitter / X Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Particle">
+    <meta name="twitter:description" content="Join the Particle community on Discord — your portal awaits.">
+    <meta name="twitter:image" content="https://particledma.top/media/q7AaAih.png">
+
+    <!-- Discord embed accent color (pink) -->
+    <meta name="theme-color" content="#ff4b91">
+
     <style>
         :root {
             --primary-pink: #ff7eb9;
@@ -101,23 +119,6 @@
             box-shadow: 0 8px 25px rgba(255, 75, 145, 0.6);
         }
 
-        /* Progress Bar */
-        .loader {
-            height: 4px;
-            width: 100%;
-            background: rgba(255, 255, 255, 0.1);
-            margin-top: 2.5rem;
-            border-radius: 10px;
-            overflow: hidden;
-        }
-
-        .loader-fill {
-            height: 100%;
-            width: 0;
-            background: var(--primary-pink);
-            animation: load 5s linear forwards;
-        }
-
         /* Animations */
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(30px); }
@@ -129,10 +130,6 @@
             50% { transform: scale(1.08); filter: drop-shadow(0 0 30px var(--secondary-pink)); }
         }
 
-        @keyframes load {
-            0% { width: 0%; }
-            100% { width: 100%; }
-        }
     </style>
 </head>
 <body>
@@ -145,20 +142,10 @@
         <img src="media\q7AaAih.png" alt="Particle Logo" class="logo">
         
         <h1>PARTICLE</h1>
-        <p>Preparing the portal for you...<br>Redirecting in a few seconds.</p>
+        <p>Undetected. Unstoppable. Particle DMA.</p>
 
-        <a href="https://discord.gg/partdma" class="btn">Join Discord Now</a>
-
-        <div class="loader">
-            <div class="loader-fill"></div>
-        </div>
+        <a href="https://discord.gg/partdma" class="btn">Join Discord</a>
     </div>
 
-    <script>
-        // Fallback JavaScript redirect
-        setTimeout(function() {
-            window.location.href = "https://discord.gg/partdma";
-        }, 5000);
-    </script>
 </body>
 </html>
