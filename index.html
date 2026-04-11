@@ -15,8 +15,8 @@
     <meta property="og:image:width" content="1008">
     <meta property="og:image:height" content="494">
     <meta property="og:image:alt" content="Particle DMA Banner">
-    <meta property="og:video" content="https://particledma.top/media/banner-video.gif">
-    <meta property="og:video:type" content="image/gif">
+    <meta property="og:video" content="https://particledma.top/media/banner-video.mp4">
+    <meta property="og:video:type" content="video/mp4">
 
     <!-- Twitter / X Card -->
     <meta name="twitter:card" content="summary_large_image">
@@ -52,7 +52,7 @@
             overflow: hidden;
         }
 
-        /* Fullscreen GIF Background */
+        /* Fullscreen Video Background */
         #video-bg {
             position: fixed;
             right: 0;
@@ -138,7 +138,9 @@
 </head>
 <body>
 
-    <img src="media/banner-video.gif" alt="" id="video-bg">
+    <video autoplay muted loop playsinline id="video-bg">
+        <source src="media/banner-video.mp4" type="video/mp4">
+    </video>
 
     <div class="container">
         <img src="media/logo.png" alt="Particle Logo" class="logo">
